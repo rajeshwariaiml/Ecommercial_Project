@@ -1,0 +1,177 @@
+.rbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+    box-shadow: 0 1px 3px -2px black;
+    align-items: center;
+}
+.r-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.r-logo p{
+    color: #171717;
+    font-size: 38px;
+    font-weight: 600;
+}
+.r-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    color: #626262;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.r-menu li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+}
+.r-menu hr{
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background: #FF4141;
+}
+.r-login-cart{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+.r-login-cart button{
+    width: 175px;
+    height: 58px;
+    outline: none;
+    border: 1px solid #7a7a7a;
+    border-radius: 75px;
+    color: #515151;
+    font-size: 20px;
+    font-weight: 500;
+    background: white;
+    cursor: pointer;
+}
+.r-login-cart button:active{
+    background: #f3f3f3;
+}
+.r-cart-count{
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -35px;
+    margin-left: -55px;
+    border-radius: 11px;
+    font-size: 14px;
+    background: red;
+    color: white;
+}
+.r-dropdown{
+    display: none;
+}
+
+@media(max-width:1280px){
+    .rbar{
+        padding: 12px 50px;
+    }
+    .r-logo img{
+        width: 40px;
+    }
+    .r-logo p{
+        font-size: 25px;
+    }
+    .r-menu{
+        gap: 30px;
+        font-size: 16px;
+    }
+    .r-login-cart{
+        gap: 30px;
+    }
+    .r-login-cart button{
+        width: 120px;
+        height: 45px;
+        font-size: 16px;
+    }
+    .r-cart-count{
+        margin-left: -40px;
+        font-size: 12px;
+    }
+}
+@media(max-width:1024px){
+    .rbar{
+        padding: 12px 30px;
+    }
+    .r-menu{
+        gap: 25px;
+        font-size: 14px;
+    }
+    .r-login-cart button{
+        width: 80px;
+        height: 35px;
+        font-size: 14px;
+    }
+    .r-login-cart img{
+        width: 30px;
+    }
+    .r-cart-count{
+        margin-left: 18px;
+        font-size: 18px;
+    }
+}
+@media(max-width:825px){
+    .rbar{
+        padding: 10px 0px;
+    }
+    .r-dropdown{
+        display: block;
+        width: 30px;
+        rotate: -90deg;
+        transition: 0.5s;
+
+    }
+    .r-menu{
+        display: none;
+        height: 80px;
+        width: 100%;
+        position: absolute;
+        background-color: white;
+        justify-content: center;
+        top: 50px;
+    }
+    .r-menu-visible{
+        display: flex;
+    }
+    .r-dropdown.open{
+        transform: rotate(90deg);
+    }
+
+    
+}
+@media(max-width:500px){
+    .rbar{
+        width: 8px 0px; 
+        gap: 0;
+
+    }
+    .r-logo{
+        transform: scale(0.8);
+    
+}
+.r-menu{
+    height: 70px;
+    top: 50px;
+}
+.r-login-cart{
+    transform: scale(0.8);
+}
+}
+
+
